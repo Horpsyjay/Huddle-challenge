@@ -2,7 +2,8 @@
     --main-pink: hsl(323, 100%, 66%);
     --hover:hsl(321, 100%, 77%);
     --errorr: hsl(360, 100%, 60);
-    --comment: hsl(210, 100%, 11%);
+    --comment: hsl(210, 48%, 18%);
+    --light-comment: hsl(211, 31%, 28%);
     --head: hsl(220, 100%, 8%);
 }
 
@@ -15,7 +16,7 @@
 }
 
 body{
-    background-color: #fff;
+    background-color: hsl(0, 0, 100%);
     min-height: 100vh;
     line-height: 1.4;
 }
@@ -34,7 +35,7 @@ body{
     align-items: center;
     width: 125px;
     height: 40px;
-    font-family: 'Poppins' ;
+    font-family: 'Open Sans' ;
     font-weight: 300;
     color: var(--main-pink);
     border: 1px solid var(--main-pink);
@@ -54,7 +55,7 @@ body{
 }
 
 .header h1{
-    font-family: sans-serif, 'Poppins' ;
+    font-family: 'Poppins';
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--head); 
@@ -65,7 +66,8 @@ body{
     max-width: 450px;
     text-align: center;
     margin: 0 auto 3.5rem auto;
-    font-family: 'sans-serif', 'Poppins';
+    font-family: 'Open Sans';
+    font-weight: 200;
     color: var(--comment);
 }
 
@@ -85,4 +87,100 @@ body{
 }
 .start-button:hover{
     background-color: var(--hover);
+}
+
+.screen{
+    display: flex;
+    justify-content: center;
+}
+
+.numbers{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    margin: 4rem auto;
+    gap: 4rem;
+}
+
+.communities, .messages {
+    font-family:'Open Sans';
+}
+ .communities h1, .messages h1{
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--head);
+    margin-top: 0.8rem;
+    margin-bottom: 0.6rem;
+ }
+
+.communities p, .messages p{
+    color: var(--light-comment)
+}
+
+.column{
+    margin: 4.5rem auto;
+}
+
+.top-desktop-section, .bottom-desktop-section{
+    display: block;
+    width: 100%;
+}
+
+.top-mobile-section, .bottom-mobile-section{
+    display: none;
+}
+
+.column_text{
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 5.5rem;
+}
+
+.first,
+.third {
+    background: hsl(207, 100%, 97%);
+}
+
+.column_text img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.first img,
+.third img {
+    order: 2;
+}
+
+.first section, .third section{
+    order: 1;
+}
+
+.column_text h2 {
+    font-family: 'Open sans';
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: var(--head);
+}
+
+.column_text p{
+    font-family: 'Open sans' ;
+    color: var(--comment)
+}
+
+/* Sincle the 'Get started..' button belongs to same class, the initial settings is applied' */
+
+.community{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    margin: 11rem auto;
+    width: max-content;
+    gap: 2rem;
+}
+
+.community h1{
+    font-family: 'Poppins';
+    font-size: 2.0rem;
 }
