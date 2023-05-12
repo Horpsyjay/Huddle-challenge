@@ -324,10 +324,10 @@ body{
 
 @media screen and (max-width: 760px) {
     body{
-        font-size: 16px;
+        font-size: 1rem;
     }
     nav{
-        padding: 2.5rem;
+        padding: 2rem;
     }
 
     .nav-btn{
@@ -335,11 +335,11 @@ body{
     }
 
     #nav-logo{
-        max-width: 8rem;
+        max-width: 6rem;
     }
 
     .header h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .header p{
@@ -387,7 +387,7 @@ body{
     }
 
     .community h1{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .footer{
