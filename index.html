@@ -25,8 +25,10 @@
   </head>
   <body>
     <nav class="top-level">
-      <a href="#" aria-label="logo"> <img src="./images/logo.svg" alt="" /></a>
-      <h4 class="nav-btn">Try it Free</h4>
+      <a href="#" aria-label="logo">
+        <img src="./images/logo.svg" alt="" id="nav-logo"
+      /></a>
+      <button class="nav-btn">Try it Free</button>
     </nav>
     <main>
       <section class="header">
@@ -37,9 +39,9 @@
           engage in genuine discussion.
         </p>
         <a href="" class="start-button"> Get started For Free</a>
-      </section>
-      <section class="screen">
-        <img src="./images/screen-mockups.svg" alt="" />
+        <div class="screen">
+          <img src="./images/screen-mockups.svg" alt="" />
+        </div>
       </section>
       <section class="numbers">
         <div class="communities">
@@ -142,5 +144,76 @@
         </div>
       </section>
     </main>
+
+    <footer>
+      <img
+        src="./images/bg-footer-top-desktop.svg"
+        alt=""
+        class="footer-desktop"
+      />
+      <img
+        src="./images/bg-footer-top-mobile.svg"
+        alt=""
+        class="footer-mobile"
+      />
+      <div class="footer">
+        <div class="info">
+          <div>
+            <img src="./images/logo.svg" alt="" id="footer-logo" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+              nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+            </p>
+            <div class="phone">
+              <img src="./images/icon-phone.svg" alt="" />
+              <p>Phone: +1-543-123-4567</p>
+            </div>
+            <div class="email">
+              <img src="./images/icon-email.svg" alt="" />
+              <a hef="#" aria-label="email">example@huddle.com</a>
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter"
+              ><i class="fab fa-twitter-square"></i>
+            </a>
+          </div>
+
+          <p class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io/?ref=challenge"
+              target="_blank"
+            >
+              Frontend Mentor.</a
+            >
+            Coded by <a href="#"> Isiaq Abduljeleel Opeyemi </a>
+          </p>
+        </div>
+        <div class="subscribe">
+          <section>
+            <h2>Newsletter</h2>
+            <p>
+              To recieve tips on how to grow your community, sign up to our
+              weekly newsletter. We’ll never send you spam or pass on your email
+              address Subscribe
+            </p>
+          </section>
+          <form action="#" id="form">
+            <div class="infield">
+              <input type="text" id="mail" />
+              <p id="error">Check your email please</p>
+            </div>
+            <a href="#" type="submit">subscribe</a>
+          </form>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
